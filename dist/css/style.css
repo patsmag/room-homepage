@@ -9,6 +9,27 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+button {
+  display: inline-block;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  height: 56px;
+  width: 56px;
+  padding: 0;
+  margin: 0;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 27%);
+}
+@media (min-width: 48em) {
+  button {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -23,6 +44,7 @@ body {
 
 .header {
   background-color: transparent;
+  z-index: 1;
 }
 .header a {
   color: hsl(0, 0%, 100%);
@@ -73,4 +95,37 @@ body {
 .header__links a:hover::before {
   opacity: 1;
   transition: 200ms ease-in-out;
+}
+
+.container {
+  position: relative;
+}
+.container .hero__mobile-slider {
+  display: flex;
+  position: fixed;
+  background-image: url(/images/mobile-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  height: 360px;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  justify-content: end;
+}
+@media (min-width: 48em) {
+  .container .hero__mobile-slider {
+    background-image: url(/images/desktop-image-hero-1.jpg);
+  }
+}
+.container .hero__buttons {
+  display: flex;
+  position: relative;
+  align-items: end;
+}
+.container .hero__buttons img {
+  height: 20px;
+}
+@media (min-width: 48em) {
+  .container .hero__buttons img {
+    height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

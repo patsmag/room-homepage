@@ -9,6 +9,27 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+button {
+  display: inline-block;
+  background-color: $black;
+  color: $white;
+  border: none;
+  height: 56px;
+  width: 56px;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $veryDarkGray;
+  }
+
+  @include breakpoint-up(tablet) {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 // Visibility
 
 .hide-for-mobile {
