@@ -1,0 +1,48 @@
+.header {
+  background-color: grey;
+  //position: relative;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    padding: 47px;
+
+    @include breakpoint-up(desktop) {
+      padding: 64px;
+      justify-content: left;
+    }
+  }
+
+  &__hamburger {
+    img {
+      height: 1rem;
+      //margin-left: 47px;
+    }
+  }
+
+  &__logo {
+    //display: flex;
+    //justify-items: center;
+    //align-items: center;
+
+    img {
+      //justify-content: center;
+      height: 1rem;
+      //width: 64px;
+    }
+  }
+
+  &__links {
+    margin-left: 57px;
+    font-size: 1rem;
+    a {
+      margin-right: 34px;
+    }
+  }
+}
