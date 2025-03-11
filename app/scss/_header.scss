@@ -1,5 +1,5 @@
 .header {
-  background-color: grey;
+  background-color: transparent;
   //position: relative;
 
   a {
@@ -41,8 +41,34 @@
   &__links {
     margin-left: 57px;
     font-size: 1rem;
+
     a {
-      margin-right: 34px;
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 34px;
+      }
+
+      &::before {
+        content: " ";
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 1rem;
+        background-color: $white;
+        opacity: 0;
+        left: 0;
+        right: 0;
+        bottom: -12px;
+        justify-self: center;
+        transition: 200ms ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+          transition: 200ms ease-in-out;
+        }
+      }
     }
   }
 }

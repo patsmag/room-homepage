@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  background-color: grey;
+  background-color: transparent;
 }
 .header a {
   color: hsl(0, 0%, 100%);
@@ -51,5 +51,26 @@ body {
   font-size: 1rem;
 }
 .header__links a {
+  position: relative;
+}
+.header__links a:not(:last-child) {
   margin-right: 34px;
+}
+.header__links a::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  justify-self: center;
+  transition: 200ms ease-in-out;
+}
+.header__links a:hover::before {
+  opacity: 1;
+  transition: 200ms ease-in-out;
 }/*# sourceMappingURL=style.css.map */
