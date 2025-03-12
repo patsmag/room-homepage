@@ -12,20 +12,19 @@ body {
 
 button {
   display: inline-block;
-  background-color: $black;
-  color: $white;
   border: none;
-  height: 56px;
-  width: 56px;
   padding: 0;
   margin: 0;
+  height: 56px;
+  width: 56px;
+  background-color: $black;
+  color: $white;
 
   &:hover {
     cursor: pointer;
     background-color: $veryDarkGray;
   }
-
-  @include breakpoint-up(tablet) {
+  @include breakpoint-up(desktop) {
     height: 80px;
     width: 80px;
   }

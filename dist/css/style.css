@@ -12,19 +12,19 @@ body {
 
 button {
   display: inline-block;
-  background-color: hsl(0, 0%, 0%);
-  color: hsl(0, 0%, 100%);
   border: none;
-  height: 56px;
-  width: 56px;
   padding: 0;
   margin: 0;
+  height: 56px;
+  width: 56px;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 button:hover {
   cursor: pointer;
   background-color: hsl(0, 0%, 27%);
 }
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   button {
     height: 80px;
     width: 80px;
@@ -114,11 +114,10 @@ button:hover {
 .hero {
   position: relative;
   top: 0;
-  height: 360px;
 }
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .hero {
-    height: 534px;
+    display: flex;
   }
 }
 .hero__image {
@@ -127,7 +126,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  height: 100%;
+  height: 360px;
   width: 100%;
   top: 0;
   left: 0;
@@ -137,14 +136,48 @@ button:hover {
 @media (min-width: 40em) {
   .hero__image {
     background-image: url(/images/desktop-image-hero-1.jpg);
-    background-size: auto;
+  }
+}
+@media (min-width: 64em) {
+  .hero__image {
+    display: flex;
+    background-size: 100%;
+    height: 534px;
+    width: 840px;
+    flex: 1 0 auto;
   }
 }
 .hero__buttons {
   display: flex;
+  position: absolute;
   justify-content: end;
-  transform: translate(0px, -56px);
 }
 .hero__buttons img {
   height: 20px;
+}
+.hero__buttons img {
+  height: 25px;
+}
+.hero__text {
+  position: relative;
+  padding: 0 27px;
+  margin: 0;
+  align-content: center;
+}
+.hero__text h1 {
+  font-size: 36px;
+}
+.hero__text p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 63%);
+  line-height: 1.375rem;
+}
+@media (min-width: 64em) {
+  .hero__text {
+    padding: 0 94px;
+    flex: 1 2 auto;
+  }
+  .hero__text h1 {
+    font-size: 46px;
+  }
 }/*# sourceMappingURL=style.css.map */
