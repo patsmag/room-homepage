@@ -1,5 +1,9 @@
 .header {
+  position: absolute;
   background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1;
 
   a {
@@ -9,8 +13,9 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
-    max-width: 50%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     padding: 47px;
 
     @include breakpoint-up(desktop) {
@@ -20,21 +25,19 @@
   }
 
   &__hamburger {
+    position: absolute;
+    left: 20px;
     img {
       height: 1rem;
-      //margin-left: 47px;
     }
   }
 
   &__logo {
-    //display: flex;
-    //justify-items: center;
-    //align-items: center;
+    display: flex;
+    justify-content: center;
 
     img {
-      //justify-content: center;
       height: 1rem;
-      //width: 64px;
     }
   }
 

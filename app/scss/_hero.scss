@@ -1,36 +1,54 @@
-.container {
+.hero {
   position: relative;
-  .hero {
-    &__mobile-slider {
-      display: flex;
-      position: fixed;
-      background-image: url(/images/mobile-image-hero-1.jpg);
-      background-repeat: no-repeat;
-      height: 360px;
-      width: 100%;
-      top: 0;
-      z-index: -1;
-      justify-content: end;
+  top: 0;
+  height: 360px;
 
-      @include breakpoint-up(tablet) {
-        background-image: url(/images/desktop-image-hero-1.jpg);
-      }
+  @include breakpoint-up(tablet) {
+    height: 534px;
+  }
+
+  &__image {
+    display: flex;
+    //position: absolute;
+    background-image: url(/images/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    justify-content: end;
+
+    @include breakpoint-up(tablet) {
+      background-image: url(/images/desktop-image-hero-1.jpg);
+      background-size: auto;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    //top: 304px;
+    //left: 263px;
+    justify-content: end;
+    transform: translate(0px, -56px);
+
+    img {
+      height: 20px;
     }
 
-    &__buttons {
-      display: flex;
-      position: relative;
-      align-items: end;
+    //   @include breakpoint-up(tablet) {
+    //     //transform: translate(840px, -80px);
 
-      img {
-        height: 20px;
-      }
+    //     img {
+    //       height: 25px;
+    //     }
+    //   }
+    // }
 
-      @include breakpoint-up(tablet) {
-        img {
-          height: 25px;
-        }
-      }
-    }
+    // &__text {
+    //   position: relative;
+    // }
   }
 }
