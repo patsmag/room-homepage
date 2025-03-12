@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    height: 360px;
+    height: 22.5rem;
     width: 100%;
     top: 0;
     left: 0;
@@ -23,30 +23,36 @@
     @include breakpoint-up(tablet) {
       background-image: url(/images/desktop-image-hero-1.jpg);
     }
-    @include breakpoint-up(desktop) {
+    @include breakpoint-up(large-screen) {
       display: flex;
       background-size: 100%;
-      height: 534px;
-      width: 840px;
+      height: 33.375rem;
+      min-width: 52.5rem;
+      flex: 1 0 auto;
+    }
+    @include breakpoint-up(desktop) {
+      display: flex;
+      background-size: cover;
+      height: 33.375rem;
+      max-width: 33.375rem;
       flex: 1 0 auto;
     }
   }
 
-  &__buttons {
+  &__arrow-buttons {
     display: flex;
-    position: absolute;
-
-    //top: 304px;
-    //left: 263px;
     justify-content: end;
-    //transform: translate(0px, -56px);
+    transform: translate(0%, -100%);
+    z-index: 1;
 
-    img {
-      height: 20px;
+    @include breakpoint-up(desktop) {
+      position: absolute;
+      transform: translate(334%, 568%);
     }
 
-    img {
-      height: 25px;
+    @include breakpoint-up(large-screen) {
+      //align-items: end;
+      transform: translate(525%, 568%);
     }
   }
 
@@ -54,7 +60,7 @@
     position: relative;
     padding: 0 27px;
     margin: 0;
-    align-content: center;
+    align-content: end;
 
     h1 {
       font-size: 36px;
@@ -64,14 +70,29 @@
       font-size: 1rem;
       color: $darkGray;
       line-height: 1.375rem;
+      margin-bottom: 46px;
     }
 
     @include breakpoint-up(desktop) {
       padding: 0 94px;
       flex: 1 2 auto;
       h1 {
+        font-size: 40px;
+      }
+
+      p {
+        margin-bottom: 40px;
+      }
+    }
+
+    @include breakpoint-up(large-screen) {
+      h1 {
         font-size: 46px;
       }
     }
+  }
+
+  &__shop-button {
+    margin-bottom: 157px;
   }
 }

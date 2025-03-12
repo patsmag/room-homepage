@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+  overflow-x: hidden;
 }
 
 button {
@@ -15,20 +16,51 @@ button {
   border: none;
   padding: 0;
   margin: 0;
-  height: 56px;
-  width: 56px;
+}
+button.arrow {
+  height: 3.5rem;
+  width: 3.5rem;
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
+  transition: color 200ms ease-in-out;
 }
-button:hover {
+button.arrow img {
+  height: 1.125rem;
+}
+button.arrow:hover {
   cursor: pointer;
   background-color: hsl(0, 0%, 27%);
+  transition: 200ms ease-in-out;
 }
 @media (min-width: 64em) {
-  button {
-    height: 80px;
-    width: 80px;
+  button.arrow {
+    height: 5rem;
+    width: 5rem;
   }
+  button.arrow img {
+    height: 1.5625rem;
+  }
+}
+button.shop {
+  background-color: transparent;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.875rem;
+  transition: 200ms ease-in-out;
+}
+button.shop img {
+  width: 2.5rem;
+  transition: 200ms ease-in-out;
+}
+button.shop:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 63%);
+  transition: 200ms ease-in-out;
+}
+button.shop:hover svg path {
+  fill: hsl(0, 0%, 63%);
+  transition: 200ms ease-in-out;
 }
 
 @media (max-width: 63.9375em) {
@@ -126,7 +158,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
-  height: 360px;
+  height: 22.5rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -138,31 +170,46 @@ button:hover {
     background-image: url(/images/desktop-image-hero-1.jpg);
   }
 }
-@media (min-width: 64em) {
+@media (min-width: 87.5em) {
   .hero__image {
     display: flex;
     background-size: 100%;
-    height: 534px;
-    width: 840px;
+    height: 33.375rem;
+    min-width: 52.5rem;
     flex: 1 0 auto;
   }
 }
-.hero__buttons {
+@media (min-width: 64em) {
+  .hero__image {
+    display: flex;
+    background-size: cover;
+    height: 33.375rem;
+    max-width: 33.375rem;
+    flex: 1 0 auto;
+  }
+}
+.hero__arrow-buttons {
   display: flex;
-  position: absolute;
   justify-content: end;
+  transform: translate(0%, -100%);
+  z-index: 1;
 }
-.hero__buttons img {
-  height: 20px;
+@media (min-width: 64em) {
+  .hero__arrow-buttons {
+    position: absolute;
+    transform: translate(334%, 568%);
+  }
 }
-.hero__buttons img {
-  height: 25px;
+@media (min-width: 87.5em) {
+  .hero__arrow-buttons {
+    transform: translate(525%, 568%);
+  }
 }
 .hero__text {
   position: relative;
   padding: 0 27px;
   margin: 0;
-  align-content: center;
+  align-content: end;
 }
 .hero__text h1 {
   font-size: 36px;
@@ -171,6 +218,7 @@ button:hover {
   font-size: 1rem;
   color: hsl(0, 0%, 63%);
   line-height: 1.375rem;
+  margin-bottom: 46px;
 }
 @media (min-width: 64em) {
   .hero__text {
@@ -178,6 +226,17 @@ button:hover {
     flex: 1 2 auto;
   }
   .hero__text h1 {
+    font-size: 40px;
+  }
+  .hero__text p {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 87.5em) {
+  .hero__text h1 {
     font-size: 46px;
   }
+}
+.hero__shop-button {
+  margin-bottom: 157px;
 }/*# sourceMappingURL=style.css.map */

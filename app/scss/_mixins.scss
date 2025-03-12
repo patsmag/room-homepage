@@ -3,8 +3,8 @@ $breakpoints-up: (
   //640px
   "desktop": "64em",
   //1024px
-  "large-screen": "90em",
-  //1440px
+  "large-screen": "87.5em",
+  //1400px
 );
 
 $breakpoints-down: (
@@ -12,8 +12,8 @@ $breakpoints-down: (
   //639px
   "desktop": "63.9375em",
   //1023px
-  "large-screen": "89.9375em",
-  //1439px
+  "large-screen": "87.4375em",
+  //1399px
 );
 
 @mixin breakpoint-up($size) {

@@ -8,6 +8,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
+  overflow-x: hidden;
 }
 
 button {
@@ -15,18 +16,55 @@ button {
   border: none;
   padding: 0;
   margin: 0;
-  height: 56px;
-  width: 56px;
-  background-color: $black;
-  color: $white;
 
-  &:hover {
-    cursor: pointer;
-    background-color: $veryDarkGray;
+  &.arrow {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: $black;
+    color: $white;
+    transition: color 200ms ease-in-out;
+
+    img {
+      height: 1.125rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $veryDarkGray;
+      transition: 200ms ease-in-out;
+    }
+
+    @include breakpoint-up(desktop) {
+      height: 5rem;
+      width: 5rem;
+
+      img {
+        height: 1.5625rem;
+      }
+    }
   }
-  @include breakpoint-up(desktop) {
-    height: 80px;
-    width: 80px;
+
+  &.shop {
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.875rem;
+    transition: 200ms ease-in-out;
+    img {
+      width: 2.5rem;
+      transition: 200ms ease-in-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $darkGray;
+      transition: 200ms ease-in-out;
+      svg path {
+        fill: $darkGray;
+        transition: 200ms ease-in-out;
+      }
+    }
   }
 }
 
