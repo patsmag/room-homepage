@@ -207,36 +207,74 @@ button.shop:hover svg path {
 }
 .hero__text {
   position: relative;
-  padding: 0 27px;
+  padding: 0 1.6875rem;
   margin: 0;
   align-content: end;
 }
 .hero__text h1 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .hero__text p {
   font-size: 1rem;
   color: hsl(0, 0%, 63%);
   line-height: 1.375rem;
-  margin-bottom: 46px;
+  margin-bottom: 2.875rem;
 }
 @media (min-width: 64em) {
   .hero__text {
-    padding: 0 94px;
+    padding: 0 5.875rem;
     flex: 1 2 auto;
   }
   .hero__text h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .hero__text p {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 @media (min-width: 87.5em) {
   .hero__text h1 {
-    font-size: 46px;
+    font-size: 2.875rem;
   }
 }
 .hero__shop-button {
-  margin-bottom: 157px;
+  margin-bottom: 4.75rem;
+}
+@media (min-width: 40em) {
+  .hero__shop-button {
+    margin-bottom: 9.8125rem;
+  }
+}
+
+.about__img-left {
+  background-image: url(/images/image-about-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 238px;
+  width: 100%;
+  margin-bottom: 54px;
+}
+.about__text {
+  text-align: left;
+  padding: 0 1.6875rem;
+  margin: 0;
+}
+.about__title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 26px;
+}
+.about__description {
+  font-size: 16px;
+  color: hsl(0, 0%, 63%);
+  margin-bottom: 45px;
+}
+.about__img-right {
+  background-image: url(/images/image-about-light.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 227px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

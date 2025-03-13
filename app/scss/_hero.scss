@@ -58,41 +58,44 @@
 
   &__text {
     position: relative;
-    padding: 0 27px;
+    padding: 0 1.6875rem;
     margin: 0;
     align-content: end;
 
     h1 {
-      font-size: 36px;
+      font-size: 2.25rem;
     }
 
     p {
       font-size: 1rem;
       color: $darkGray;
       line-height: 1.375rem;
-      margin-bottom: 46px;
+      margin-bottom: 2.875rem;
     }
 
     @include breakpoint-up(desktop) {
-      padding: 0 94px;
+      padding: 0 5.875rem;
       flex: 1 2 auto;
       h1 {
-        font-size: 40px;
+        font-size: 2.5rem;
       }
 
       p {
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
       }
     }
 
     @include breakpoint-up(large-screen) {
       h1 {
-        font-size: 46px;
+        font-size: 2.875rem;
       }
     }
   }
 
   &__shop-button {
-    margin-bottom: 157px;
+    margin-bottom: 4.75rem;
+    @include breakpoint-up(tablet) {
+      margin-bottom: 9.8125rem;
+    }
   }
 }
