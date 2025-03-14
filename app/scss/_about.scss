@@ -28,7 +28,7 @@
   &__text {
     text-align: left;
     align-content: center;
-    padding: 0 1.6875rem;
+    padding: 3.375rem 2rem 2.75rem;
     margin: 0;
     @include breakpoint-up(tablet) {
       width: 125%;
@@ -36,27 +36,23 @@
   }
 
   &__title {
-    font-size: 0.75rem;
+    font-size: 0.9375rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.4375rem;
-    margin-top: 3.375rem;
+    letter-spacing: 0.3125rem;
+    //margin-top: 3.375rem;
     margin-bottom: 1.625rem;
 
     @include breakpoint-up(tablet) {
-      font-size: 0.875rem;
-      margin-top: 1.875rem;
-    }
-    @include breakpoint-up(desktop) {
-      font-size: 0.875rem;
-      margin-top: 3.375rem;
+      font-size: 1rem;
+      margin-top: 0;
     }
   }
 
   &__description {
     font-size: 1rem;
     color: $darkGray;
-    margin-bottom: 2.8125rem;
+    line-height: 1.375rem;
   }
 
   &__img-right {
