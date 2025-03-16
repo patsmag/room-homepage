@@ -24,6 +24,9 @@ const nextButton = document.querySelector(".button-next");
 const slideImg = document.querySelector(".slide-img");
 const slideTitle = document.querySelector(".slide-title");
 const slideDescription = document.querySelector(".slide-description");
+const hamburgerBtn = document.querySelector(".hamburger");
+const overlay = document.querySelector(".overlay");
+const closeBtn = document.querySelector(".close-button");
 let currentSlide = 0;
 
 function updateSlide() {
@@ -58,4 +61,14 @@ nextButton.addEventListener("click", () => {
   } else {
     updateSlide();
   }
+});
+
+hamburgerBtn.addEventListener("click", () => {
+  overlay.classList.add("open");
+  overlay.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  overlay.classList.remove("open");
+  overlay.classList.add("hidden");
 });

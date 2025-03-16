@@ -33,10 +33,23 @@
   </head>
   <body>
     <header class="header">
+      <div class="overlay hidden">
+        <div class="overlay__items">
+          <button class="overlay__button close-button">
+            <img src="images/icon-close.svg" alt="" />
+          </button>
+          <div class="overlay__mobile-menu hide-for-desktop">
+            <a href="#">home</a>
+            <a href="#">shop</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+          </div>
+        </div>
+      </div>
       <nav class="header__nav">
-        <a href="#" class="header__hamburger hide-for-desktop">
+        <button class="header__hamburger hamburger hide-for-desktop">
           <img src="/images/icon-hamburger.svg" alt="Hamburger menu" />
-        </a>
+        </button>
 
         <a href="#" class="header__logo">
           <img src="images/logo.svg" alt="Logo" />

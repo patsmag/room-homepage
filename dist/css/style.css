@@ -75,6 +75,17 @@ button.shop:hover svg path {
   }
 }
 
+.open {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .header {
   position: absolute;
   background-color: transparent;
@@ -102,10 +113,17 @@ button.shop:hover svg path {
 }
 .header__hamburger {
   position: absolute;
+  background-color: transparent;
   left: 20px;
 }
 .header__hamburger img {
   height: 1rem;
+}
+.header__hamburger img:hover {
+  cursor: pointer;
+}
+.header__hamburger:hover {
+  cursor: pointer;
 }
 .header__logo {
   display: flex;
@@ -130,7 +148,7 @@ button.shop:hover svg path {
   display: block;
   height: 2px;
   width: 1rem;
-  background-color: hsl(0, 0%, 100%);
+  background-color: red;
   opacity: 0;
   left: 0;
   right: 0;
@@ -141,6 +159,44 @@ button.shop:hover svg path {
 .header__links a:hover::before {
   opacity: 1;
   transition: 200ms ease-in-out;
+}
+.header .overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.header .overlay__items {
+  position: relative;
+  justify-self: center;
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  top: 44px;
+}
+.header .overlay__button {
+  position: absolute;
+  background-color: transparent;
+  top: 10px;
+  right: 10px;
+}
+.header .overlay__button:hover {
+  cursor: pointer;
+}
+.header .overlay__mobile-menu {
+  justify-items: center;
+  padding: 30px;
+}
+.header .overlay__mobile-menu a {
+  display: block;
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  width: 100%;
+  padding: 18px;
+  text-align: center;
 }
 
 .hero {

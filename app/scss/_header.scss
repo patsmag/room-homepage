@@ -26,9 +26,17 @@
 
   &__hamburger {
     position: absolute;
+    background-color: transparent;
     left: 20px;
     img {
       height: 1rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
@@ -57,7 +65,7 @@
         display: block;
         height: 2px;
         width: 1rem;
-        background-color: $white;
+        background-color: red;
         opacity: 0;
         left: 0;
         right: 0;
@@ -71,6 +79,50 @@
           opacity: 1;
           transition: 200ms ease-in-out;
         }
+      }
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    background-color: rgba($color: $black, $alpha: 0.75);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    &__items {
+      position: relative;
+      justify-self: center;
+      width: 70%;
+      background-color: white;
+      border-radius: 5px;
+      top: 44px;
+    }
+
+    &__button {
+      position: absolute;
+      background-color: transparent;
+      top: 10px;
+      right: 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__mobile-menu {
+      justify-items: center;
+      padding: 30px;
+
+      a {
+        display: block;
+        background: $white;
+        color: $black;
+        width: 100%;
+        padding: 18px;
+        text-align: center;
       }
     }
   }

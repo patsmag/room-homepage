@@ -81,3 +81,14 @@ button {
     display: none;
   }
 }
+
+.open {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
