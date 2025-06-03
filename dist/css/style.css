@@ -272,7 +272,7 @@ button.shop:hover svg path {
   margin-bottom: 1.6875rem;
   margin-top: 0;
   font-weight: 600;
-  letter-spacing: -0.128rem;
+  letter-spacing: -0.13rem;
 }
 .hero__text p {
   font-size: 1rem;
@@ -280,7 +280,7 @@ button.shop:hover svg path {
   line-height: 1.375rem;
   margin-bottom: 2.875rem;
   margin-top: 0;
-  letter-spacing: -0.0118rem;
+  letter-spacing: -0.012rem;
 }
 @media (min-width: 64em) {
   .hero__text {
@@ -314,7 +314,6 @@ button.shop:hover svg path {
 .hero__shop-button svg {
   position: relative;
   top: 0.125rem;
-  margin-left: 0.3125rem;
 }
 @media (min-width: 64em) {
   .hero__shop-button {
@@ -366,7 +365,7 @@ button.shop:hover svg path {
 }
 @media (min-width: 64em) {
   .about__text {
-    padding: 3.875rem 2.8125rem 3.875rem 3rem;
+    padding: 4.375rem 2.5rem 4.375rem 3rem;
   }
 }
 .about__title {
