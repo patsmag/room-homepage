@@ -30,6 +30,9 @@
     align-content: center;
     padding: 3.375rem 2rem 2.75rem;
     margin: 0;
+    // @include breakpoint-up(tablet) {
+    //   width: 125%;
+    // }
     @include breakpoint-up(tablet) {
       width: 125%;
     }
