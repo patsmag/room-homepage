@@ -352,6 +352,11 @@ button.shop:hover svg path {
     font-size: 0.75rem;
   }
 }
+@media (min-width: 64em) {
+  .about__text {
+    padding: 0 2.25rem;
+  }
+}
 .about__title {
   font-size: 0.9375rem;
   font-weight: 700;
@@ -364,6 +369,14 @@ button.shop:hover svg path {
     font-size: 0.875rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    letter-spacing: 0.3125rem;
+  }
+}
+@media (min-width: 64em) {
+  .about__title {
+    font-size: 1rem;
+    letter-spacing: 0.4375rem;
+    margin-bottom: 1.25rem;
   }
 }
 .about__description {

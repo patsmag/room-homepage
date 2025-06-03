@@ -36,6 +36,10 @@
       padding: 0 1rem;
       font-size: 0.75rem;
     }
+
+    @include breakpoint-up(desktop) {
+      padding: 0 2.25rem;
+    }
   }
 
   &__title {
@@ -49,6 +53,13 @@
       font-size: 0.875rem;
       margin-top: 0;
       margin-bottom: 0.5rem;
+      letter-spacing: 0.3125rem;
+    }
+
+    @include breakpoint-up(desktop) {
+      font-size: 1rem;
+      letter-spacing: 0.4375rem;
+      margin-bottom: 1.25rem;
     }
   }
 
