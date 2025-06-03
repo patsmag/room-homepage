@@ -38,7 +38,9 @@
     }
 
     @include breakpoint-up(desktop) {
-      padding: 4.1875rem 3rem;
+      // padding: 4.1875rem 3rem;
+      padding: 3.875rem 2.8125rem 3.875rem 3rem;
+      //padding: 3.875rem 3rem;
     }
   }
 

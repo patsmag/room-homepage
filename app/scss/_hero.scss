@@ -65,7 +65,7 @@
       margin-bottom: 1.6875rem;
       margin-top: 0;
       font-weight: 600;
-      letter-spacing: -0.125rem;
+      letter-spacing: -0.128rem;
     }
 
     p {
@@ -74,7 +74,7 @@
       line-height: 1.375rem;
       margin-bottom: 2.875rem;
       margin-top: 0;
-      letter-spacing: -0.01125rem;
+      letter-spacing: -0.0118rem;
     }
 
     @include breakpoint-up(desktop) {
@@ -107,9 +107,11 @@
     font-size: 0.9375rem;
     font-weight: 600;
     font-family: "League Spartan";
-    letter-spacing: 0.75rem;
+    letter-spacing: 0.78rem;
 
     svg {
+      position: relative;
+      top: 0.125rem;
       margin-left: 0.3125rem;
     }
 
