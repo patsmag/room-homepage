@@ -16,10 +16,10 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    padding: 47px;
+    padding: 2.9375rem;
 
     @include breakpoint-up(desktop) {
-      padding: 64px;
+      padding: 4rem;
       justify-content: left;
     }
   }
@@ -27,7 +27,7 @@
   &__hamburger {
     position: absolute;
     background-color: transparent;
-    left: 20px;
+    left: 1.25rem;
     img {
       height: 1rem;
       &:hover {
@@ -45,31 +45,32 @@
     justify-content: center;
 
     img {
-      height: 1rem;
+      height: 0.875rem;
     }
   }
 
   &__links {
-    margin-left: 57px;
-    font-size: 1rem;
+    margin-left: 3.5rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
 
     a {
       position: relative;
       &:not(:last-child) {
-        margin-right: 34px;
+        margin-right: 1.8125rem;
       }
 
       &::before {
         content: " ";
         position: absolute;
         display: block;
-        height: 2px;
+        height: 0.125rem;
         width: 1rem;
         background-color: $white;
         opacity: 0;
         left: 0;
         right: 0;
-        bottom: -12px;
+        bottom: -0.75rem;
         justify-self: center;
         transition: 200ms ease-in-out;
       }
@@ -97,15 +98,15 @@
       justify-self: center;
       width: 70%;
       background-color: white;
-      border-radius: 5px;
-      top: 44px;
+      border-radius: 0.3125rem;
+      top: 2.75rem;
     }
 
     &__button {
       position: absolute;
       background-color: transparent;
-      top: 10px;
-      right: 10px;
+      top: 0.625rem;
+      right: 0.625rem;
 
       &:hover {
         cursor: pointer;
@@ -114,14 +115,14 @@
 
     &__mobile-menu {
       justify-items: center;
-      padding: 30px;
+      padding: 1.875rem;
 
       a {
         display: block;
         background: $white;
         color: $black;
         width: 100%;
-        padding: 18px;
+        padding: 1.125rem;
         text-align: center;
       }
     }
