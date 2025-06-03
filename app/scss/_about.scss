@@ -27,7 +27,7 @@
 
   &__text {
     text-align: left;
-    align-content: center;
+    align-content: start;
     padding: 3.375rem 2rem 2.75rem;
     margin: 0;
 
@@ -38,9 +38,7 @@
     }
 
     @include breakpoint-up(desktop) {
-      //padding: 4.1875rem 3rem;
-      padding: 4.375rem 2.5rem 4.375rem 3rem;
-      //padding: 3.875rem 3rem;
+      padding: 4.375rem 2.5rem 3.125rem 3rem;
     }
   }
 
