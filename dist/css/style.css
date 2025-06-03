@@ -348,6 +348,8 @@ button.shop:hover svg path {
 @media (min-width: 40em) {
   .about__text {
     width: 125%;
+    padding: 0 1rem;
+    font-size: 0.75rem;
   }
 }
 .about__title {
@@ -359,8 +361,9 @@ button.shop:hover svg path {
 }
 @media (min-width: 40em) {
   .about__title {
-    font-size: 1rem;
+    font-size: 0.875rem;
     margin-top: 0;
+    margin-bottom: 0.5rem;
   }
 }
 .about__description {

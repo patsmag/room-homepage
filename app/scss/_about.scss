@@ -30,11 +30,11 @@
     align-content: center;
     padding: 3.375rem 2rem 2.75rem;
     margin: 0;
-    // @include breakpoint-up(tablet) {
-    //   width: 125%;
-    // }
+
     @include breakpoint-up(tablet) {
       width: 125%;
+      padding: 0 1rem;
+      font-size: 0.75rem;
     }
   }
 
@@ -43,12 +43,12 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.3125rem;
-    //margin-top: 3.375rem;
     margin-bottom: 1.625rem;
 
     @include breakpoint-up(tablet) {
-      font-size: 1rem;
+      font-size: 0.875rem;
       margin-top: 0;
+      margin-bottom: 0.5rem;
     }
   }
 
