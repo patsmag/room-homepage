@@ -314,6 +314,7 @@ button.shop:hover svg path {
 .hero__shop-button svg {
   position: relative;
   top: 0.125rem;
+  margin-left: 0.125rem;
 }
 @media (min-width: 64em) {
   .hero__shop-button {
