@@ -366,7 +366,7 @@ button.shop:hover svg path {
 }
 @media (min-width: 64em) {
   .about__text {
-    padding: 4.375rem 2.5rem 3.125rem 3rem;
+    padding: 4.125rem 2.5rem 3.125rem 3rem;
   }
 }
 .about__title {
